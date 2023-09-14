@@ -1,0 +1,93 @@
+* {
+    margin: 0%;
+    color: aliceblue;
+}
+nav {
+    background-color: black;
+
+}
+
+/*body*/
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+.logo h4 {
+    font-size: 15px;
+    color: rgb(255, 0, 136);
+}
+.arts-pcipales{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+.principal {
+    border: 2px solid rgb(93, 246, 167);
+    padding: 20px;
+    height: 70%;
+}
+.principal img {
+    object-fit: contain;
+    width:100%;
+    height:100%;
+}
+
+.principal-2 {
+    padding: 20px;    
+    height: 30%;
+}
+
+.barra-animada {
+    background-color: blueviolet;
+    height: 5%;
+    margin: 2px 0px;
+}
+.barra-animada p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/*footer*/
+footer {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.list-menu { /*Trabajando en los Ul */
+    border: 2px solid #fff;
+    height: 10vh;
+    list-style-type: none;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.list-menu-li { /*Trabajando en los li */
+    font-size: 90%;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 10px 40px;
+}
+.list-menu-li i{
+    font-size: 20px;
+    margin: 7px;
+}
+.list-menu-li p:hover {
+    color: rgb(146, 208, 255);
+}
+.list-menu-li i:hover {
+    color: rgb(146, 208, 255);
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+}
