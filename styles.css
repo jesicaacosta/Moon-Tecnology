@@ -8,14 +8,20 @@ nav {
 }
 
 /*body*/
+body {
+    background-color: rgb(19, 11, 0);
+}
 .logo {
     display: flex;
-    justify-content: center;
-    height: 10vh;
+    width: 100%;
+    height: 5vh;
+    justify-content:center;   /*alineacion horizontal*/
+    align-items: center; /*alineacion vertical*/
+    background-color: #000;
 }
-.logo h4 {
-    font-size: 15px;
-    color: rgb(255, 0, 136);
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
 }
 .arts-pcipales{
     background-color: black;
@@ -25,29 +31,45 @@ nav {
     height: 70%;
 }
 .principal {
-    border: 2px solid rgb(93, 246, 167);
     padding: 20px;
     height: 70%;
 }
-.principal img {
+.principal-img {
     object-fit: contain;
     width:100%;
     height:100%;
 }
 
-.principal-2 {
-    padding: 20px;    
-    height: 30%;
+.principal-2{
+    display: flex;
+    width: 100%;
+}
+.principal-2-list {
+    display: flex;
+    width: 100%;
+}
+.principal-2-list li {
+    margin: 5px;
+    width: 35%;
+    flex-wrap: wrap;
+} 
+.principal-2-list-img {
+    object-fit:cover;
+    width:100%;
+    height:100%;
 }
 
+
 .barra-animada {
-    background-color: blueviolet;
-    height: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: darkmagenta;
+    height: 3%;
     margin: 2px 0px;
 }
 .barra-animada p {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
     padding: 5px;
 }
@@ -63,21 +85,19 @@ footer {
 }
 
 .list-menu { /*Trabajando en los Ul */
-    border: 2px solid #fff;
     height: 10vh;
     list-style-type: none;
     display: flex;
     align-items:flex-start;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
 .list-menu-li { /*Trabajando en los li */
     font-size: 90%;
     font-family: 'Titillium Web', sans-serif;
-    margin: 10px 40px;
+    margin: 10px 7px;
 }
 .list-menu-li i{
     font-size: 20px;
