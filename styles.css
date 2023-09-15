@@ -23,12 +23,27 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
 }
+
+.barra-animada {
+    background-color: darkmagenta;
+    height: 3%;
+    margin: 5px 0px;
+    width: 100%;
+}
+.barra-animada p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+
 .arts-pcipales{
     background-color: black;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: 50%;
 }
 .principal {
     padding: 20px;
@@ -42,16 +57,18 @@ body {
 
 .principal-2{
     display: flex;
+    height: 70%;
     width: 100%;
 }
 .principal-2-list {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+
 }
 .principal-2-list li {
     margin: 5px;
-    width: 35%;
-    flex-wrap: wrap;
+    width: 45%;
 } 
 .principal-2-list-img {
     object-fit:cover;
@@ -59,21 +76,18 @@ body {
     height:100%;
 }
 
-
-.barra-animada {
-    display: flex;
-    flex-wrap: nowrap;
+.barra-animada-inferior {
     background-color: darkmagenta;
     height: 3%;
-    margin: 2px 0px;
+    position: absolute;
+    margin: 200px 0px;
+    width: 100%;
 }
-.barra-animada p {
+.barra-animada-inferior p {
     font-family: 'Titillium Web', sans-serif;
     font-size: 10px;
     text-align: center;
-    padding: 5px;
 }
-
 
 /*footer*/
 footer {
@@ -106,7 +120,7 @@ footer {
 .list-menu-li p:hover {
     color: rgb(146, 208, 255);
 }
-.list-menu-li i:hover {
+.list-menu-li i:hover { /*para los iconos del menu inferior*/
     color: rgb(146, 208, 255);
     transform: scale(1.2);
     transition-duration: 0.4s;
