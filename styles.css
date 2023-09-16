@@ -2,10 +2,14 @@
     margin: 0%;
     color: aliceblue;
 }
+p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+}
 nav {
     background-color: black;
-
 }
+
 
 /*body*/
 body {
@@ -25,6 +29,8 @@ body {
 }
 
 .barra-animada {
+    display: flex;
+    align-items: center;
     background-color: darkmagenta;
     height: 3%;
     margin: 5px 0px;
@@ -37,43 +43,50 @@ body {
     padding: 5px;
 }
 
-
-.arts-pcipales{
-    background-color: black;
-    padding: 10px;
+.box-fath-pcpl{ /* Caja contenedora principal*/
     display: flex;
     flex-direction: column;
     height: 50%;
+    width: 100%;
 }
-.principal {
-    padding: 20px;
-    height: 70%;
+.box-fath-1 { /*articulo de img principal*/
+    height: 50%;
+    margin: 10px;
 }
-.principal-img {
+
+.box-fath-1-img { /*imagen principal*/
     object-fit: contain;
     width:100%;
     height:100%;
 }
-.principal-2{
+.box-fath-2{
+    margin: 20px;
     display: flex;
-    height: 70%;
+    height: 50%;
     width: 100%;
 }
-.principal-2-list {
+.box-fath-2-list { /*ul*/
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 
 }
-.principal-2-list li {
+.box-fath-2-list li {
     margin: 5px;
     width: 45%;
 } 
-.principal-2-list-img {
+.box-fath-2-list-img {
     object-fit:cover;
     width:100%;
     height:100%;
 }
+
+.txt-copy {
+    position: relative;
+    margin: 400px 10px;
+}
+
+
 
 /*footer*/
 footer {
@@ -113,3 +126,54 @@ footer {
     transform: scale(1.2);
     transition-duration: 0.4s;
 }
+
+
+
+
+/* PAGINA CONCTACTANOS*/
+
+.form-mail {
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.form-mail h1 {
+    font-family: 'Lucida Sans', sans-serif;
+    color: #4ce2ea;
+}
+.form-mail input {
+    margin: 5px;
+}
+
+.button-64 {
+    background-color: #4ce2ea;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-64:hover, .button-64:focus {
+    background-color: #9cf0f4;
+    }
