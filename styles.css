@@ -19,7 +19,8 @@ p{
 }
 .container-logo h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 5vh;/* El tamaño de fuente es el % de la altura del contenedor */
+    font-size: 3vh;/* El tamaño de fuente es el 30% de la altura del contenedor */
+    flex-wrap: nowrap;
 }
 
 /*body*/
@@ -46,9 +47,7 @@ body {
 
 .cards{ /* Caja contenedora principal*/
     display: flex;
-    border: 1px dashed salmon;
-    flex-direction: column;
-    height: 50vh;
+    height: 55vh;
 }
 .box-1-img1{ /*imagen principal*/
     object-fit: cover;
@@ -56,14 +55,17 @@ body {
     height:100%;
 }
 
-
 .txt-principal{
+    background-color: #000;
     margin: 10px 30px ;
     padding: 10px;
     text-align: center;
 }
 .txt-principal p {
     font-size: large;
+}
+legend h1 {
+    font-size: 20px;
 }
 
 /*
