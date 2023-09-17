@@ -9,7 +9,7 @@ p{
 }
 
 .container-logo {
-    background-color: black;
+    background-color: #000;
     height: 10vh;
     text-align: center; /* Centra horizontalmente el contenido */
     display: flex;
@@ -25,31 +25,15 @@ p{
 
 /*body*/
 body {
-    background-color: rgb(19, 11, 0);
+    background-color: #000
 }
 
 
-/*.barra-animada {
-    display: flex;
-    align-items: center;
-    background-color: darkmagenta;
-    height: 3%;
-    margin: 5px 0px;
-    width: 100%;
-}
-.barra-animada p {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 10px;
-    text-align: center;
-    padding: 5px;
-} */
-
-
-.cards{ /* Caja contenedora principal*/
+.home-banner{ /* Caja contenedora principal*/
     display: flex;
     height: 55vh;
 }
-.box-1-img1{ /*imagen principal*/
+.home-banner-img{ /*imagen principal*/
     object-fit: cover;
     width:100%;
     height:100%;
@@ -65,28 +49,24 @@ body {
     font-size: large;
 }
 
-/*
-.box-fath-2{
-    margin: 20px;
-    display: flex;
-    height: 50%;
-    width: 100%;
-}
-.box-fath-2-list {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.box-fath-2-list li {
-    margin: 5px;
-    width: 45%;
-} 
-.box-fath-2-list-img {
-    object-fit:cover;
-    width:100%;
-    height:100%;
-} */
 
+.cards-home-img {
+    list-style: none;
+    display: inline-block;
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+.image-container {
+    width: 200px; 
+    height: 200px;
+    overflow: hidden; /* Recorta las imágenes si son más grandes */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la relación de aspecto y llena el contenedor */
+}
 
 
 
