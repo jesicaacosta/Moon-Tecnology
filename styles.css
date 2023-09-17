@@ -64,9 +64,6 @@ body {
 .txt-principal p {
     font-size: large;
 }
-legend h1 {
-    font-size: 20px;
-}
 
 /*
 .box-fath-2{
@@ -113,21 +110,23 @@ footer {
 }
 
 .list-menu-li { /*Trabajando en los li */
-    font-size: 90%;
     font-family: 'Titillium Web', sans-serif;
     margin: 10px 7px;
     border-left: 1px solid #fff;
     width: 20vh;
+    text-align: center;
 }
 .list-menu-li i{
     font-size: 2vh;
-    margin: 7px;
+    margin: 5px;
 }
-.list-menu-li p:hover {
-    color: rgb(146, 208, 255);
+.list-menu-li p {
+    font-size: 2vh;
+    text-align: center;
 }
-.list-menu-li i:hover { /*para los iconos del menu inferior*/
-    color: rgb(146, 208, 255);
+
+.list-menu-li:hover { /*para los iconos del menu inferior*/
+    color: rgb(0, 145, 255);
     transform: scale(1.2);
     transition-duration: 0.4s;
 }
