@@ -1,32 +1,32 @@
 * {
     margin: 0%;
     color: aliceblue;
+    box-sizing: border-box;
 }
 p{
     font-family: 'Titillium Web', sans-serif;
     font-size: 12px;
 }
-nav {
-    background-color: black;
-}
 
+.container-logo {
+    background-color: black;
+    height: 10vh;
+    text-align: center; /* Centra horizontalmente el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;/* El tamaño de fuente es el % de la altura del contenedor */
+}
 
 /*body*/
 body {
     background-color: rgb(19, 11, 0);
 }
-.logo {
-    display: flex;
-    width: 100%;
-    height: 5vh;
-    justify-content:center;   /*alineacion horizontal*/
-    align-items: center; /*alineacion vertical*/
-    background-color: #000;
-}
-.logo h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: medium;
-}
+
 
 .barra-animada {
     display: flex;
