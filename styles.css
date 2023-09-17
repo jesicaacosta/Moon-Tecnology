@@ -28,7 +28,7 @@ body {
 }
 
 
-.barra-animada {
+/*.barra-animada {
     display: flex;
     align-items: center;
     background-color: darkmagenta;
@@ -41,35 +41,42 @@ body {
     font-size: 10px;
     text-align: center;
     padding: 5px;
-}
+} */
 
-.box-fath-pcpl{ /* Caja contenedora principal*/
+
+.cards{ /* Caja contenedora principal*/
     display: flex;
+    border: 1px dashed salmon;
     flex-direction: column;
-    height: 50%;
-    width: 100%;
+    height: 50vh;
 }
-.box-fath-1 { /*articulo de img principal*/
-    height: 50%;
-    margin: 10px;
-}
-
-.box-fath-1-img { /*imagen principal*/
-    object-fit: contain;
+.box-1-img1{ /*imagen principal*/
+    object-fit: cover;
     width:100%;
     height:100%;
 }
+
+
+.txt-principal{
+    margin: 10px 30px ;
+    padding: 10px;
+    text-align: center;
+}
+.txt-principal p {
+    font-size: large;
+}
+
+/*
 .box-fath-2{
     margin: 20px;
     display: flex;
     height: 50%;
     width: 100%;
 }
-.box-fath-2-list { /*ul*/
+.box-fath-2-list {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-
 }
 .box-fath-2-list li {
     margin: 5px;
@@ -79,12 +86,8 @@ body {
     object-fit:cover;
     width:100%;
     height:100%;
-}
+} */
 
-.txt-copy {
-    position: relative;
-    margin: 400px 10px;
-}
 
 
 
