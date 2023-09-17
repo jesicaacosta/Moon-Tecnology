@@ -1,4 +1,5 @@
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,32 +26,39 @@
         </article>
     </header>
 
-
+    <main>
         <section class="form-mail">
             <form action="">
-                <h1>Contactanos</h1>
-                <label for="first-name">Cómo te llamás? </label> <input type="text" 
-                name="first-name" id=""> <br> <br>
-                <label for="mail">Cuál es tu correo? </label> <input type="mail" name="mail" 
-                id=""><br> <br>
-                <label for="mail">Indicanos también un celular: </label> <input type="number" name="mail" 
-                id=""><br> <br>
-                <h3>Motivo de tu Mensaje:</h3>
-                <input type="checkbox" name="" id="">Hacer un reclamo 🙁<br>
-                <input type="checkbox" name="" id="">Pregunta sobre una garantía 🛠️<br>
-                <input type="checkbox" name="" id="">Consulta sobre una compra realizada 🛒
-                <br>
-                <label for="mensaje">Contanos más! Ingresá tu consulta:📝 </label> 
-                <textarea name="" 
-                id="" cols="30" rows="10"></textarea>
-                <br> <br>
-                <input type="button" class="button-64" value="Enviar" id="">
-            </form>
-        </section>
-        <section class="redes">
+                <fieldset>
+                    <legend><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                        Contactanos</legend>
+                
+                    <label for="first-name">Cómo te llamás? </label> <input type="text" name="first-name" id="" required > <br> <br>
+                    <label for="mail">Cuál es tu correo? </label> <input type="mail" name="mail" id="" required> <br> <br>
+                    <label for="mail">Indicanos también un celular: </label> <input type="number" name="mail" id="" required ><br> <br>
+                    <h3>Motivo de tu Mensaje:</h3>
+                    <input type="checkbox" name="" id="">Hacer un reclamo 🙁<br>
+                    <input type="checkbox" name="" id="">Pregunta sobre una garantía 🛠️<br>
+                    <input type="checkbox" name="" id="">Consulta sobre una compra realizada 🛒
+                    <br>
+                    <label for="mensaje">Contanos más! Ingresá tu consulta:📝 </label>
+                    <textarea name="" id="" cols="40" rows="10"></textarea>
+                    <br> <br>
+
+                    <label for="Enviar"></label>
+                        <input type="submit" class="button" value="Enviar" id="">
+                        <input type="reset" class="reset-button" value="Reset" id="" >
+                    </form>
+                </fieldset>
 
         </section>
-    </body>
+
+    </main>
+    
+    <section class="redes">
+
+    </section>
+</body>
 
 
 
@@ -83,33 +91,33 @@
 
 
 
-    <footer>
-        <ul class="list-menu">
-            <li class="list-menu-li">
-                <a href=""><i class="fa fa-bars" aria-hidden="true"></i>
-                </a>
-                <p>MENU</p>
-            </li>
-            <li class="list-menu-li">
-                <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
-                </a>
-                <p>HOME</p>
-            </li>
-            <li class="list-menu-li">
-                <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                <p>TIENDA</p>
-            </li>
-            <li class="list-menu-li">
-                <a href="contactanos.html"><i class="fa fa-commenting" aria-hidden="true"></i></a>
-                <p>CONTACTANOS</p>
-            </li>
-            <li class="list-menu-li">
-                <a href="https://www.w3schools.com/" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i>
-                </a>
-                <p>LOGIN</p>
-            </li>
-        </ul>
-    </footer>
+<footer>
+    <ul class="list-menu">
+        <li class="list-menu-li">
+            <a href=""><i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+            <p>MENU</p>
+        </li>
+        <li class="list-menu-li">
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+            <p>HOME</p>
+        </li>
+        <li class="list-menu-li">
+            <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+            <p>TIENDA</p>
+        </li>
+        <li class="list-menu-li">
+            <a href="contactanos.html"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+            <p>CONTACTANOS</p>
+        </li>
+        <li class="list-menu-li">
+            <a href="https://www.w3schools.com/" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i>
+            </a>
+            <p>LOGIN</p>
+        </li>
+    </ul>
+</footer>
 
 </body>
 

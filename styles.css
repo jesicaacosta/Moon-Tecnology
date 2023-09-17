@@ -139,25 +139,34 @@ footer {
     justify-content: center;
     padding: 10px;
 }
-.form-mail h1 {
+legend {
     font-family: 'Lucida Sans', sans-serif;
     color: #4ce2ea;
+    margin: 40px 0px;
+    text-align: center;
+    font-size: 30px;
+
 }
 .form-mail input {
     margin: 5px;
+    color: #000000;
+}
+.form-mail textarea {
+    color: #000;
+    font-size: large;
 }
 
-.button-64 {
-    background-color: #4ce2ea;
+.button , .reset-button{
+    background-color: #ff32e7;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
     color: #000000;
     cursor: pointer;
     display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500; /*Grosor font*/
     height: 40px;
     line-height: 20px;
     list-style: none;
@@ -174,6 +183,7 @@ footer {
     touch-action: manipulation;
 }
 
-.button-64:hover, .button-64:focus {
-    background-color: #9cf0f4;
+.button:hover, .button:focus , .reset-button:hover , reset-button:focus  {
+    background-color: #ffb4f6;
     }
+
