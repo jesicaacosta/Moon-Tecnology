@@ -1,0 +1,37 @@
+ * {
+          margin: 0;
+ }
+
+
+.animacion {
+          background-color: lightblue;
+          width: 200px;
+          height: 200px;
+          animation-name: animacion;
+          animation-duration: 5s;
+          animation-delay: .0s;
+          /*retardo animacion*/
+          position: relative;
+          /*Para poder mover la animacion con left top...*/
+          animation-timing-function: linear;
+          animation-iteration-count: 1;
+}
+
+@keyframes animacion {
+          /*llamo a la animacion*/
+          0% {
+                    /*cuando la animacion no aparecio*/
+                    background-color: rgb(138, 211, 207);
+                    left: 100vw;
+                    top: 0px;
+                    width: 150px;
+                    height: 500px;
+          }
+          1% {
+
+          }
+          100% {
+                    left:0;
+                    border-radius: 50px;
+          }
+}

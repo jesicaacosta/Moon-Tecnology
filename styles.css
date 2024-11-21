@@ -1,5 +1,5 @@
 * {
-    margin: 10px;
+    margin: 0;
     color: aliceblue;
     box-sizing: border-box; /*Definimos el tamaño de la caja y se mantiene aunque le agreguemos paddin y margin*/
 }
@@ -10,31 +10,38 @@ p{
 
 .container-logo {
     height: 10vh;
-    text-align: center; /* Centra horizontalmente el contenido */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centra vertical el contenido */
+    justify-content: center;  /* Centra horiz el contenido */
 }
 .container-logo h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;/* El tamaño de fuente es el 30% de la altura del contenedor */
-    flex-wrap: nowrap;
 }
 
 /*body*/
 body {
-    background-color: #000
+    background-color: #000;
 }
 
 
-.home-banner{ /* Caja contenedora principal*/
+.container-banner{ /* Caja contenedora principal*/
     display: flex;
     height: 55vh;
+    width: 100vw;
+    overflow: hidden;
+
 }
 .home-banner-img{ /*imagen principal*/
     object-fit:cover;
     width:100%;
     height:100%;
+    transition: all 1s linear;
+}
+
+.home-banner-img:hover {
+    width: 102%;
+    height: 102%;
 }
 
 .txt-principal{
@@ -45,35 +52,22 @@ body {
     text-align: center;
 }
 
-.gallery {
+.container-galeria {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.image-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: auto;
-
+    width: 100vw;
 }
 
 .image-item {
-    width: 500px; /* Cambia el tamaño deseado */
-    height: 500px; /* Cambia el tamaño deseado */
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 500px;
+    width: 100%;
+    flex-wrap: nowrap;
+    border: 1px solid #ffff;
 }
 
-.image-item img {
+.img-galer {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -84,7 +78,6 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    right: 0;
 }
 
 .list-menu { /*Trabajando en los Ul */
